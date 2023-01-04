@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #241B2F, #262335);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-rocket {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#earth {
+    animation: color_earth 5s infinite linear;
+}
+#rocket_window {
+    fill: lightgray;
+    animation: move_rocket 4s infinite linear;
+}
+#rocket {
+    stroke: lightgray;
+    animation: move_rocket 4s infinite linear;
+}
+#flame_1 {
+    fill: yellow;
+    animation: move_rocket 4s infinite linear;
+}
+#flame_2 {
+    fill: orangered;
+    animation: move_rocket 4s infinite linear;
+}
+#flame_3 {
+    fill: orangered;
+    animation: move_rocket 4s infinite linear;
+}
+
+@keyframes move_rocket {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-100px);
+    }
+    50% {
+        transform: translateY(-200px);
+    }
+    75% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes color_earth {
+    0% {
+        fill: skyblue;
+    }
+    25% {
+        fill: aqua;
+    }
+    50% {
+        fill: aquamarine;
+    }
+    75% {
+        fill: aqua;
+    }
+    100% {
+        fill: skyblue;
+    }
+}
